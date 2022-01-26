@@ -57,7 +57,7 @@ Vue.component('vue-confirm-dialog', VueConfirmDialog.default)
 Vue.use(VueToast);
 
 export default {
-  name: "PersonForm",
+  name: "PromotionsForm",
   data: function () {
     return {
       message: "",
@@ -77,7 +77,7 @@ export default {
     },
   methods: {
     
-    back: function () {this.$router.push("/persons");},
+    back: function () {this.$router.push("/promotion");},
 
     create: function (payload) {
       client.post("api/v1/promotions", payload)
@@ -89,7 +89,7 @@ export default {
             position: 'top-right'
             });
         this.message = "Promotion added!";
-        this.$router.push("/persons?msg="+this.message);
+        this.$router.push("/promotion?msg="+this.message);
         })
         .catch((error) => {
           this.message = error;
@@ -145,7 +145,7 @@ export default {
         });
 
           this.message = "Promotion updated!";
-          this.$router.push("/persons?msg="+this.message);
+          this.$router.push("/promotion?msg="+this.message);
         })
         .catch((error) => {
           this.message = error;
@@ -155,7 +155,7 @@ export default {
         });
     },
     salir() {
-            this.$router.push("/persons");
+            this.$router.push("/promotion");
         },
   },
 

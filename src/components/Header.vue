@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="primary">
-      <b-navbar-brand href="#" class="pl-4">SIS. FARMACIA</b-navbar-brand>
+      <b-navbar-brand href="#" class="pl-4">SIS. AVEONLINE</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -17,26 +17,15 @@
     </b-navbar>
     <div class="navis">
       <b-nav tabs pills align="center">
-        <b-nav-item to="/persons">Promociones</b-nav-item>
-        <!-- Comment <b-nav-item to="/docent">Docentes</b-nav-item>
-        <b-nav-item to="/student">Estudiantes</b-nav-item>
-        <b-nav-item to="/curse">Cursos</b-nav-item>
-        <b-nav-item>Nivel </b-nav-item>
-        <b-nav-item>Unidad </b-nav-item>
-        <b-nav-item>Grupo </b-nav-item>-->
-        <b-nav-item to="/academicperiod">Medicamentos</b-nav-item>
+        <b-nav-item to="/promotion">Promociones</b-nav-item>
+        <b-nav-item to="/medicine">Medicamentos</b-nav-item>
         <b-nav-item to="/bill">Facturas</b-nav-item>
         <b-nav-item to="/simulacion">Simulación de Ventas</b-nav-item>
-        <b-nav-item to="/reporte">Reporte</b-nav-item>
-
-        <!--<b-nav-item>Jerarquia </b-nav-item>
-        <b-nav-item>Inscripción</b-nav-item>        
-        <b-nav-item>Plan Docente</b-nav-item>
-        <b-nav-item>Horario Académico</b-nav-item>-->
+        <b-nav-item to="/reporte">Reporte de Ventas</b-nav-item>
       </b-nav>
     </div>
     <br />
-    <br />
+    <br />    
   </div>
 </template>
 

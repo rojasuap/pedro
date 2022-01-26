@@ -68,7 +68,7 @@ Vue.component('vue-confirm-dialog', VueConfirmDialog.default)
 Vue.use(VueToast);
 
 export default {
-    name: "AcademicPeriod",
+    name: "Medicine",
     data: function () {
         return {
             medicines: [],
@@ -80,10 +80,10 @@ export default {
     },
     methods: {
         edit: function (id) {
-            this.$router.push("academicperiod/form/" + id);
+            this.$router.push("medicine/form/" + id);
         },
         add: function () {
-            this.$router.push("academicperiod/form");
+            this.$router.push("medicine/form");
         },
         getList: function () {
             client.get("api/v1/medicines").then((res) => {

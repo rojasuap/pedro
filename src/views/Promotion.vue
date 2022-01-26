@@ -4,8 +4,6 @@
     
     <vue-confirm-dialog></vue-confirm-dialog>
     
-   
-    
     <div class="container">
      
         <div class="row">
@@ -74,7 +72,7 @@ Vue.component('vue-confirm-dialog', VueConfirmDialog.default)
 Vue.use(VueToast);
 
 export default {
-    name: "Person",
+    name: "Promotion",
     data: function () {
         return {
             list: [],
@@ -86,10 +84,10 @@ export default {
     },
     methods: {
         edit: function (id) {
-            this.$router.push("persons/form/" + id);
+            this.$router.push("promotion/form/" + id);
         },
         add: function () {
-            this.$router.push("persons/form");
+            this.$router.push("promotion/form");
         },
         getList: function () {
             client.get("api/v1/promotions").then((res) => {

@@ -60,7 +60,7 @@ Vue.component('vue-confirm-dialog', VueConfirmDialog.default)
 Vue.use(VueToast);
 
 export default {
-  name: "AcademicPeriodForm",
+  name: "MedicineForm",
   data: function () {
     return {
       message: "",
@@ -80,7 +80,7 @@ export default {
     },
   methods: {
     
-    back: function () {this.$router.push("/academicperiod");},
+    back: function () {this.$router.push("/medicine");},
 
     create: function (payload) {
       client.post("api/v1/medicines", payload)
@@ -92,7 +92,7 @@ export default {
             position: 'top-right'
             });
         this.message = "Medicine added!";
-        this.$router.push("/academicperiod?msg="+this.message);
+        this.$router.push("/medicine?msg="+this.message);
         })
         .catch((error) => {
           this.message = error;
@@ -145,17 +145,16 @@ export default {
         });
 
           this.message = "Medicamento updated!";
-          this.$router.push("/academicperiod?msg="+this.message);
+          this.$router.push("/medicine?msg="+this.message);
         })
         .catch((error) => {
           this.message = error;
           this.showMessage = true;
           console.error(error);
-          //this.getBooks();
         });
     },
     salir() {
-            this.$router.push("/academicperiod");
+            this.$router.push("/medicine");
         },
   },
 

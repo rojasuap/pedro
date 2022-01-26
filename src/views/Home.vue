@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="text-red-600 font-mono text-3xl font-bold">
   <Header />
-
   <h1>Hola soy Home</h1>
 
   </div>

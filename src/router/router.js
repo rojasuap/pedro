@@ -5,9 +5,6 @@ import Home from '../views/Home.vue'
 import Medicine from '../views/Medicine.vue';
 import MedicineForm from '../views/MedicineForm.vue';
 
-//import AcademicPlan from '../views/AcademicPlan.vue';
-//import AcademicPlanForm from '../views/AcademicPlanForm.vue';
-
 import Promotion from '../views/Promotion.vue';
 import PromotionForm from '../views/PromotionForm.vue';
 
@@ -20,6 +17,7 @@ import Logout from '../views/Logout.vue';
 import Simulacion from '../views/Simulacion.vue';
 
 import Reporte from '../views/Reporte.vue';
+import Principal from '../views/UserPrincipal/Principal.vue';
 
 
 
@@ -100,6 +98,11 @@ const router = new VueRouter({
             path: '/simulacion',
             name: 'Simulacion',
             component: Simulacion,
+        },
+        {
+            path: '/',
+            name: 'Principal',
+            component: Principal,
         },
     ],
 });
